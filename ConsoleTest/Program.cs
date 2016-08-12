@@ -27,7 +27,7 @@ namespace ConsoleTest
 
                     string message = $"Hello World at {DateTime.Now:G}";
                     var body = Encoding.UTF8.GetBytes(message);
-
+                    
                     channel.BasicPublish(exchange: "",
                                          routingKey: "hello",
                                          basicProperties: null,
